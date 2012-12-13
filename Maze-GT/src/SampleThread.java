@@ -18,7 +18,7 @@ class SampleThreader extends Applet implements Runnable, KeyListener {
     }
 
     public void changeGraphics(Graphics g) {
-        rat = new Rat(rat.x*10, rat.y*10, g );
+        //rat = new Rat(rat.x*10, rat.y*10, g );
     }
 
 

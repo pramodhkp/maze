@@ -8,11 +8,11 @@ import java.awt.*;
  * To change this template use File | Settings | File Templates.
  */
 public class Rat {
-    int x, y;
+    int x = 0, y = 3;
 
     Rat(int x, int y, Graphics g){
-        this.x = x;
-        this.y = y;
+        this.x = y;
+        this.y = x;
         g.setColor(Color.red);
         g.drawRect(x, y, 10, 10);
         g.fillRect(x, y, 10, 10);
@@ -20,14 +20,12 @@ public class Rat {
     }
 
     Rat(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this.x = 0;
+        this.y = 3;
     }
 
     void moveUp(){
-        if(x>=0 && y>=0 && x<=41 && y<=41){
             y =y-1;
-        }
     }
 
     void moveDown(){
